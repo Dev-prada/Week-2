@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Development Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Navbar */
+        .navbar {
+            background-color: #130d1a;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-color: #f8f9fa;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: url('assets/images/background1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-content {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Card Styles */
+        .card {
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #130d1a;
+            padding: 20px 0;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Frontend Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Writings from our team</h1>
+            <p>The latest industry news, interviews, technologies, and resources.</p>
+        </div>
+    </div>
+
+    <!-- Articles Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article1'">
+                    <img src="assets/images/img0.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">What is Frontend Development?</h5>
+                        <p class="card-text">An introduction to frontend development and its importance in web design.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article2'">
+                    <img src="assets/images/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Development Roadmap</h5>
+                        <p class="card-text">A comprehensive guide to the skills and technologies needed for frontend development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article3'">
+                    <img src="assets/images/img2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Is HTML a Programming Language?</h5>
+                        <p class="card-text">A detailed discussion on whether HTML can be considered a programming language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article4'">
+                    <img src="assets/images/img3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">What is the main purpose of JavaScript in frontend development?</h5>
+                        <p class="card-text">Understanding the role of JavaScript in building dynamic and interactive web applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article5'">
+                    <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS Grid vs. Flexbox</h5>
+                        <p class="card-text">Comparing CSS Grid and Flexbox for layout design in modern web development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article6'">
+                    <img src="assets/images/img5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">How to Optimize Web Performance</h5>
+                        <p class="card-text">Tips and techniques for improving the speed and efficiency of your web pages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article7'">
+                    <img src="assets/images/img7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to Web Accessibility</h5>
+                        <p class="card-text">Ensuring your website is accessible to all users, including those with disabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article8'">
+                    <img src="assets/images/img8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsive Design Best Practices</h5>
+                        <p class="card-text">Creating websites that look great on any device, from mobile phones to desktops.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="window.location.href='articles.html#article9'">
+                    <img src="assets/images/img9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Role of APIs in Frontend Development</h5>
+                        <p class="card-text">How APIs enable frontend developers to create dynamic, data-driven applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Frontend Development Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
